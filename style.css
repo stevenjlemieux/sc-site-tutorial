@@ -3,7 +3,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Verdana, Helvetica, Arial, san-serif; /* definitely check out https://www.w3schools.com/cssref/pr_font_font-family.asp for more info on font families */
-  background-color: #67E0A0;
+  background-color: #c0c0c0;
 }
 
 .hero-image {
@@ -56,9 +56,54 @@ body, html {
 
 .textblock p {
     /* This section lets you adjust the text style for your paragraph element text in the textblock div. */
-	
+	text-indent: 50px;
 	font-size: 1em;
 	line-height: 1.5;
+  }
+  
+  .essay {
+	/* You can use this to control broad elements of the .textblock <div>.*/
+	text-align: left;
+	color: #000000;
+  }
+  
+  .essay h2 {
+	/* This section lets you adject the h2 heading style for text in the .textblock div/ */
+	text-align: center;	
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5;
+  }
+
+.essay p {
+    /* This section lets you adjust the text style for your paragraph element text in the textblock div. */
+	text-indent: 50px;
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: georgian, times new roman, serif;
+  }
+  
+    .works {
+	/* You can use this to control broad elements of the .textblock <div>.*/
+	text-align: left;
+	color: #000000;
+  }
+  
+  .works h2 {
+	/* This section lets you adject the h2 heading style for text in the .textblock div/ */
+	text-align: center;	
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5;
+  }
+
+.works p {
+    /* This section lets you adjust the text style for your paragraph element text in the textblock div. */
+	text-indent: -50px; 
+	padding-left: 50px; 
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: georgian, times new roman, serif;
   }
   
 
@@ -246,7 +291,7 @@ this CSS element centers text elements*/
 
 /* This CSS section controls the paragraph, video blocks. These are really important sections! They change the bulk of how your text is arranged on the screen. Try playing around with these elements. Look up the invidivual elements on W3 schools*/
 @media screen and (min-width: 800px) {
-    .textblock, .video {
+    .textblock, .video, .essay, .works {
 		/* This section adjusts non-mobile screens*/
         margin: auto;
         width: 50%;
@@ -256,7 +301,7 @@ this CSS element centers text elements*/
 }
 
 @media screen and (max-width: 800px) {
-    .textblock, .video {
+    .textblock, .video, .essay, .works {
 		/* This section adjusts mobile screens*/
         margin: auto;
         padding-left: 20px;
